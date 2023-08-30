@@ -34,11 +34,11 @@ const postRecipe = async (req, res) => {
       // Associate the created diets with the new recipe
       await newRecipeDb.addDiets(dietRecords);
     }
-    // let response = {
-    //   ...newRecipeDb.daValues,
-    //   diets : diets
-    // }
-    return res.status(201).json( req.body );
+    let response = {
+      ...newRecipeDb.daValues,
+      diets : diets
+    }
+    return res.status(201).json( response );
   } catch (error) {
     console.error('Error:', error);
     return res.status(500).json({ message: 'Internal server error' });
