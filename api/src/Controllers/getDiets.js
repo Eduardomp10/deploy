@@ -53,7 +53,7 @@ if (dietsForDbArray.length > 0) {
 const getAllDiets = async (req, res) => {
     try {
         const dietsLoad = await Diets.findAll(); // Debes usar await aquí
-        set(dietsLoad)
+        // set(dietsLoad)
         return res.status(200).json(dietsLoad);
     } catch (error) {
         console.error('Error fetching diets from database:', error);
