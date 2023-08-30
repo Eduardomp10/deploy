@@ -1,5 +1,6 @@
 const axios = require('axios');
 const { Diets } = require('../db');
+const { set } = require('../app');
 const { API_KEY } = process.env; 
 
 const URL = 'https://api.spoonacular.com/recipes/complexSearch?';
@@ -52,6 +53,7 @@ if (dietsForDbArray.length > 0) {
 const getAllDiets = async (req, res) => {
     try {
         const dietsLoad = await Diets.findAll(); // Debes usar await aquí
+        set(dietsLoad)
         return res.status(200).json(dietsLoad);
     } catch (error) {
         console.error('Error fetching diets from database:', error);

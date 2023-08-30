@@ -1,7 +1,7 @@
 const axios = require('axios');
 const { Recipe, Diets } = require('../db');
 const { API_KEY } = process.env;
-
+const { Op } = require('sequelize')
 const postRecipe = async (req, res) => {
   try {
     const { name, summary, image, healthScore, steps, diets } = req.body;
@@ -21,12 +21,18 @@ const postRecipe = async (req, res) => {
 
     if (diets && diets.length > 0) {
       // Assuming 'diets' is an array of diet names
-      const dietRecords = await Diets.bulkCreate(
-        diets.map((diet) => ({ name: diet }))
+      const dietRecords = await Diets.findAll({
+        where: {
+          name: {
+            [Op.in]: diets,
+          },
+        },
+      }
+      //   diets.map((diet) => ({ name: diet }))
       );
 
       // Associate the created diets with the new recipe
-      await newRecipeDb.setDiets(dietRecords);
+      await newRecipeDb.addDiets(dietRecords);
     }
     // let response = {
     //   ...newRecipeDb.daValues,
