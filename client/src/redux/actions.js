@@ -6,7 +6,7 @@ import axios from 'axios'
 export const getRecipes = () => {
    return async function(dispatch) {
       try {
-         const recipes = (await axios.get(`http://localhost:3001/recipes/name?name=`)).data;
+         const recipes = (await axios.get(`/recipes/name?name=`)).data;
          // console.log(recipes);
          return dispatch({type: GET_RECIPES, payload: recipes});
      } catch (error) {
@@ -21,7 +21,7 @@ export const getRecipeDetail = (id) =>{
    return async function(dispatch){
       
       try {
-         const recipes = (await axios.get(`http://localhost:3001/recipes/${id}`)).data;
+         const recipes = (await axios.get(`/recipes/${id}`)).data;
          if(recipes) {
          return dispatch({type: GET_RECIPE_DETAIL, payload: recipes});
       }
@@ -34,7 +34,7 @@ export const getRecipeDetail = (id) =>{
  export const getDiets = () => {
     return async function(dispatch) {
       try {
-         let diets = (await axios.get("http://localhost:3001/diets")).data
+         let diets = (await axios.get("/diets")).data
          diets = diets.map(diets=> diets.name)
          return dispatch({type: GET_DIETS, payload: diets})
       } catch (error) {
@@ -46,7 +46,7 @@ export const searchByName = (name) =>{
    return async function(dispatch){
       
       try {
-         const recipes = (await axios.get(`http://localhost:3001/recipes/name?name=${name}`)).data;
+         const recipes = (await axios.get(`/recipes/name?name=${name}`)).data;
          if(recipes) {
          return dispatch({type: SEARCH_RECIPES_BY_NAME, payload: recipes});
       }
@@ -60,7 +60,7 @@ export const postRecipe = (recipe) =>{
    return async function(dispatch){
       
       try {
-         const postedRecipe = (await axios.post(`http://localhost:3001/recipes`,recipe)).data;
+         const postedRecipe = (await axios.post(`/recipes`,recipe)).data;
          if(postedRecipe) {
          return dispatch({type: POST_RECIPE, payload: postedRecipe});
       }
