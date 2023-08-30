@@ -1,0 +1,67 @@
+.mainDiv {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://img.freepik.com/vector-premium/telarana-blanca-sobre-fondo-rojo-telarana-vector_350503-1179.jpg?w=2000);
+}
+.titleDiv {
+    background-color:#fbd4e7;
+    width: 700px;
+    height: 500px;
+    justify-content: center;
+    border-radius: 5%;
+}
+.Image {
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3fa9257d-45df-44dd-b119-63eccc6cb25c/dbbxkuw-3b40daa8-483a-4d73-b80f-84542e477135.png/v1/fit/w_828,h_1144,q_70,strp/spiderman_by_kawaiiipoop_dbbxkuw-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTQxNiIsInBhdGgiOiJcL2ZcLzNmYTkyNTdkLTQ1ZGYtNDRkZC1iMTE5LTYzZWNjYzZjYjI1Y1wvZGJieGt1dy0zYjQwZGFhOC00ODNhLTRkNzMtYjgwZi04NDU0MmU0NzcxMzUucG5nIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.cw93MFPqVgusKEkcXETuiz4OyoQk1ONPO2copMwOd04');
+    width: 500px;
+    height: 500px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    position: fixed;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+    
+
+}
+
+.title {
+    font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  margin-left: 400px;
+  margin-top: 100px;
+}
+
+.startBtn {
+    margin-left: 400px;
+    margin-top: 30px;
+    display: inline-block;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #e51837; /* Rojo típico de Spider-Man */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+.startBtn:hover {
+    background-color: #001e5f;
+}

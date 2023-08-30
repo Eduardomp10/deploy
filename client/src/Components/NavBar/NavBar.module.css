@@ -1,0 +1,53 @@
+.navBar {
+    height: 10vh;
+    background-color:rgb(28, 27, 27);
+    width: 100vw;
+    position: fixed;
+
+}
+
+
+.spideyChef {
+    width: 100px;
+    height: 70px;
+    object-fit: cover;
+    margin-bottom: 250px;
+    margin-left: 90%;
+}
+
+.spideyLogo {
+    margin-right: 90%;
+    margin-top: -28px;
+    width: 300px;
+    /* height: 70px; */
+    object-fit: cover; /* Ajusta la imagen sin deformarla, recortando si es necesario */
+}
+.linkDiv {
+    margin-left: 50%;
+    margin-top: -120px;
+    gap: 40px;
+    display: flex;
+    position: fixed;
+}
+.button {
+    background-color: #e62b30;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 14px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+    margin-top: -90px;
+}
+.button:hover {
+    background-color: #d0171e;
+}
+.navBarPhrase {
+    margin-left: 48%;
+    font-weight: 700;
+    position: fixed;
+    margin-top: -85px;
+    color: aliceblue;
+}

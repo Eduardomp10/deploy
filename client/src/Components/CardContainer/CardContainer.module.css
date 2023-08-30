@@ -1,0 +1,49 @@
+.mainDiv {
+    background-color: rgb(43, 40, 77);
+    width: 85vw;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 15vw;
+    max-height: 110%;
+    justify-content: space-between;
+    min-height: 90vh;
+    flex-direction: column;
+}
+
+.cardDiv {
+    margin-top: 15px;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.pagesDiv {
+    height: 100%;
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85vw;
+    padding: 10px 0; /* Agregar espaciado para separar de otros elementos */
+}
+.spidermanButton {
+    background-color: #e62b30;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 14px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+    position: relative;
+}
+
+.spidermanButton:hover {
+    background-color: #d0171e;
+}
+
+.activePage {
+    background-color: #2b3784;
+    color: white;
+}

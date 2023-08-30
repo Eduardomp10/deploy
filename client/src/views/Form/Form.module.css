@@ -1,0 +1,64 @@
+.container {
+    background-color: rgb(43, 40, 77);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+.formContainer {
+    margin-top: 7%;
+    margin-left: 13%;
+    width: 100%;
+    height: 800px;
+}
+.recipeForm{
+    background-color: #464646;
+    border-radius: 5%;
+    width: 800px;
+    height: 800px;
+    margin-left: 430px;
+    position: absolute;
+}
+.inputName{
+    margin-top: 10px;
+    padding-bottom: 5px;
+
+}
+.inputImage{
+    margin-top: -10px;
+    padding-bottom: 15px;
+    
+}
+.inputSummary {
+    margin-top: -10px;
+}
+.errorSpan {
+    color: red;
+    font-weight: 700;
+}
+.datSpan{
+    color: red;
+    font-weight: 700;
+}
+.spanRari{
+    color: red;
+    font-weight: 700;
+    margin-top: -10px;
+}
+.diets {
+    font-weight: 700;
+    margin-top: -5px;
+    margin-left: 150px;
+    width: 500px;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espacio entre las opciones de dieta */
+    align-items: center; /* Centrar elementos horizontalmente */
+  }
+.checkboxFieldset {
+    border: none;
+    margin-top: -15px;
+}

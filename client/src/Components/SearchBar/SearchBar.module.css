@@ -1,0 +1,32 @@
+.searchBar {
+    color: white;
+    font-weight: 700; 
+    border-right: 5px solid #333;
+
+}
+.searchBar{
+    background-color: #ad2327;
+    margin: 0;
+    width: 15vw;
+    height: 90vh;
+    position: absolute;
+}
+.dietsP {
+    text-align: left;
+    padding-left: 20px;
+    font-weight: 700;
+}
+.checkboxFieldset {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border: none;
+    margin-top: -15px;
+}
+.fieldset {
+    border: none;
+
+}
+.orderP {
+    font-weight: 700;
+}

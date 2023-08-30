@@ -1,0 +1,59 @@
+.mainDiv {
+  height: 100%;
+  width: 100vw;
+  background-color: #fbd4e7;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  z-index: -1;
+  
+
+} 
+.spideyChef{
+    width: 30vw;
+    height: 90vh;
+    margin-right: 300px;
+    margin-top: 50px;
+}
+
+.descriptionDiv {
+    background-color: aliceblue;
+    border: 5px solid rgb(255, 255, 255);
+    width: 60%;
+    height: 98%;
+    margin-top: 100px;
+    margin-right: 8%;
+    
+}
+.contentImage {
+    height: 145px;
+    width: 25%;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.dietTitle {
+    font-weight: 700;
+    padding-top: 0px;
+}
+.dietList {
+    display: inline; /* Cambia a inline para que los elementos estén en línea */
+    margin: 0; /* Elimina el margen predeterminado */
+    padding: 0; /* Elimina el relleno predeterminado */
+    font-weight: 0;
+}
+.dietDiv{
+    margin-bottom: 5px;
+}
+
+.diet {
+    display: inline-block; /* Alinea los elementos en línea */
+    margin-right: 10px; /* Agrega espacio entre los elementos */
+}
+.stepsDiv {
+    margin-top: -5px;
+}
+.stepsTitle {
+    font-weight: 700;
+    
+}
+
