@@ -6,7 +6,7 @@ import NavBar from './Components/NavBar/NavBar';
 import Detail from './views/Detailed/Detail';
 import Form from './views/Form/Form';
 import axios from 'axios';
-axios.defaults.baseURL = 'https://deploy-production-ba63.up.railway.app'
+axios.defaults.baseURL = 'https://deploy-production-ba63.up.railway.app/'
 function App() {
   const location = useLocation().pathname;
   return (
